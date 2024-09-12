@@ -180,14 +180,36 @@ header{
     
 }
 
-@media (max-width: 767px){
-    .contact{
+.contact .card ul a{
+    color: var(--white);
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+
+    h1 {
+        font-size: 200%; /* Réduire légèrement la taille des titres sur mobile */
+    }
+    h2 {
+        font-size: 150%; /* Ajuster la taille des sous-titres */
+    }
+    .login-btn {
+        font-size: 14px; /* Réduire la taille du bouton pour s'adapter aux petits écrans */
+    }
+
+    .contact {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .contact .card{
+    .contact .card {
         width: 100%;
-        height: 20vh;
+        height: auto; /* Ajuste la hauteur automatiquement selon le contenu */
+        margin-bottom: 20px; /* Ajoute un espace entre les cartes sur mobile */
+    }
+    .contact .card ul {
+        padding: 10px; /* Réduis le padding pour une meilleure lisibilité */
     }
 }
